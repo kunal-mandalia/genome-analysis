@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdbool.h>
 #include "./base-pair.h"
+#include <stdbool.h>
+#include <stdio.h>
 
 /**
  *  The human genome contains around 3 billion base pairs.
@@ -14,13 +14,14 @@ int main() {
   char r[MAX_SEQ_LEN];
 
   printf("Type the first base pair sequence to compare:\n");
-  fgets(l,MAX_SEQ_LEN,stdin);
+  fgets(l, MAX_SEQ_LEN, stdin);
 
   printf("Type the second base pair sequence to compare:\n");
-  fgets(r,MAX_SEQ_LEN,stdin);
+  fgets(r, MAX_SEQ_LEN, stdin);
 
   bool matching = matchingSequences(l, r);
-  printf(matching == false ? "The genome sequences do not form a pair\n" : "The genome sequence does form a pair\n");
+  printf(matching == false ? "The genome sequences do not form a pair\n"
+                           : "The genome sequence does form a pair\n");
 
   return 0;
 }
