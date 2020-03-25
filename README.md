@@ -1,4 +1,4 @@
-# genome-sequencing
+# genome-analysis
 
 ## Motivation
 
